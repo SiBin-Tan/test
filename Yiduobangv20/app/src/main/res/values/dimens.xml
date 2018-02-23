@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tvSizeMin">10sp</dimen>
+    <dimen name="tvSizeSmall">12sp</dimen>
+    <dimen name="tvSizeMedium">14sp</dimen>
+    <dimen name="tvSizeBig">16sp</dimen>
+    <dimen name="tvSizeMax">18sp</dimen>
+    <dimen name="toolbarSize">20sp</dimen>
+    <dimen name="order_time_tvSize">22sp</dimen>
+
+    <dimen name="toolbarHeight">45dp</dimen>
+    <dimen name="circelSize">35dp</dimen>
+    <dimen name="order_itemHeight">50dp</dimen>
+    <dimen name="order_itemMargin">10dp</dimen>
+    <dimen name="order_viewHeight">40dp</dimen>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:background="@color/appTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/toolbarSize" />
+
+        <ImageView
+            android:id="@+id/toolbar_imgUp"
+            android:layout_width="@dimen/toolbarHeight"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:src="@mipmap/toolbar_up" />
+
+        <ImageView
+            android:id="@+id/toolbar_imgUpdate"
+            android:layout_width="@dimen/toolbarHeight"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:padding="12dp"
+            android:src="@mipmap/toolbar_update" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbarHeight">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.amap.api.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.amap.api.maps.MapView>
+
+            <Button
+                android:id="@+id/btnOrder"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@color/appTheme"
+                android:text="@string/main_btn_start"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tvSizeMedium" />
+
+            <ImageButton
+                android:id="@+id/imgLocation"
+                android:layout_width="@dimen/circelSize"
+                android:layout_height="@dimen/circelSize"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/circle_btn_bg"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_location_src" />
+
+            <ImageButton
+                android:id="@+id/imgClientLocation"
+                android:layout_width="@dimen/circelSize"
+                android:layout_height="@dimen/circelSize"
+                android:layout_above="@id/imgLocation"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/circle_btn_bg"
+                android:padding="7dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_client_src" />
+        </RelativeLayout>
+
+        <include
+            layout="@layout/include_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

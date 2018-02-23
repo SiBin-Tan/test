@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">亿多帮</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    
+    <string name="main_btn_start">开始接单</string>
+    <string name="main_btn_stop">停止接单</string>
+    <string name="main_btn_detail">查看详情</string>
+    <string name="order_btnConfirm_receive">确认订单</string>
+    <string name="order_btnConfirm_send">发送账单</string>
+    <string name="order_tvPhone_wait">接单后显示...</string>
+    <string name="order_tvState_not_receive">未接单</string>
+    <string name="order_tvState_receive">已接单</string>
+    <string name="order_tvState_wait">等待客户付款</string>
+
+
+    <string name="dialog_moneyHint">小数点后最多保留一位</string>
+
+    <string name="moneyDialog_noNull">订单金额不能为空</string>
+    <string name="moneyDialog_noZero">订单金额不能为零</string>
+    <string name="moneyDialog_max">订单金额不得超过一千元</string>
+</resources>

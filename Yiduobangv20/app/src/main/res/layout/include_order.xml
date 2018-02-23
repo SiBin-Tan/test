@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/order_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/order_bg"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/order_relContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/order_tvHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无订单"
+            android:textColor="@color/order_tvGray"
+            android:textSize="@dimen/tvSizeMax"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/order_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/order_time_bg">
+                <ImageView
+                    android:id="@+id/order_ImgTime"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/order_time_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:id="@+id/order_tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间"
+                    android:textSize="@dimen/order_time_tvSize"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/order_ImgTime"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:id="@+id/order_tvState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状态"
+                    android:textSize="@dimen/tvSizeBig"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/order_tvTime"
+                    android:layout_alignLeft="@+id/order_tvTime"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/order_itemHeight">
+                    <ImageView
+                        android:layout_width="@dimen/order_itemHeight"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/order_location_icon"
+                        android:padding="14dp"/>
+                    <TextView
+                        android:id="@+id/order_tvAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="地址"
+                        android:textSize="@dimen/tvSizeMedium"
+                        android:textColor="@color/order_tvGray"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/order_itemHeight">
+                    <ImageView
+                        android:layout_width="@dimen/order_itemHeight"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/order_phone_icon"
+                        android:padding="14dp"/>
+                    <TextView
+                        android:id="@+id/order_tvPhone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="接单后显示..."
+                        android:textSize="@dimen/tvSizeMedium"
+                        android:textColor="@color/order_tvGray"/>
+                    <Button
+                        android:id="@+id/order_btnPhone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/some_btn_bg"
+                        android:text="拨打电话"
+                        android:textSize="@dimen/tvSizeMedium"
+                        android:textColor="@color/order_tvGray"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/order_itemHeight">
+                    <ImageView
+                        android:layout_width="@dimen/order_itemHeight"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/order_money_icon"
+                        android:padding="14dp"/>
+                    <TextView
+                        android:id="@+id/order_tvMoney"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="接单后显示..."
+                        android:textSize="@dimen/tvSizeMedium"
+                        android:textColor="@color/order_tvGray"/>
+
+                    <Button
+                        android:id="@+id/order_btnMoney"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/some_btn_bg"
+                        android:text="变更金额"
+                        android:textSize="@dimen/tvSizeMedium"
+                        android:textColor="@color/order_tvGray"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/appBackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_itemHeight"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/order_btnCancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/some_btn_bg"
+                    android:text="取消订单"
+                    android:textSize="@dimen/tvSizeBig"
+                    android:textColor="@color/tvGray"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/appBackground"/>
+
+                <Button
+                    android:id="@+id/order_btnConfirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/some_btn_bg"
+                    android:text="确认订单"
+                    android:textSize="@dimen/tvSizeBig"
+                    android:textColor="@color/order_btnText"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

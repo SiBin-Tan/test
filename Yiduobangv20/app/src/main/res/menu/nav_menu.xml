@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_history"
+            android:icon="@mipmap/menu_history"
+            android:title="历史订单" />
+        <item
+            android:id="@+id/menu_update"
+            android:icon="@mipmap/menu_update"
+            android:title="检查更新" />
+        <item
+            android:id="@+id/menu_exit"
+            android:icon="@mipmap/menu_exit"
+            android:title="退出登录" />
+    </group>
+
+</menu>
