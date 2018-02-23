@@ -12,23 +12,18 @@ import android.widget.TextView;
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVInstallation;
 import com.avos.avoscloud.SaveCallback;
-import com.google.gson.Gson;
 import com.however.yiduobang_v20.Base.BaseActivity;
 import com.however.yiduobang_v20.Controller.BaseController;
 import com.however.yiduobang_v20.Model.ErrorModel;
-import com.however.yiduobang_v20.Model.IntentModel;
 import com.however.yiduobang_v20.Model.ResponseModel;
 import com.however.yiduobang_v20.Utils.LogUtils;
-import com.however.yiduobang_v20.Utils.MyUtils;
 import com.however.yiduobang_v20.Utils.PermissionUtils;
 import com.however.yiduobang_v20.Utils.SharedPreferencesUtils;
-import com.however.yiduobang_v20.Utils.ToastUtils;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-import java.security.Key;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -14,7 +14,6 @@ import com.avos.avoscloud.AVInstallation;
 import com.however.yiduobang_v20.Base.BaseActivity;
 import com.however.yiduobang_v20.Controller.BaseController;
 import com.however.yiduobang_v20.Model.ErrorModel;
-import com.however.yiduobang_v20.Model.IntentModel;
 import com.however.yiduobang_v20.Model.ResponseModel;
 import com.however.yiduobang_v20.Utils.SharedPreferencesUtils;
 import com.however.yiduobang_v20.Utils.ToastUtils;
